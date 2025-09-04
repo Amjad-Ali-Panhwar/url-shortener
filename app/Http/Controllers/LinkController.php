@@ -63,7 +63,7 @@ class LinkController extends Controller
     /**
      * Generate a unique short code with a custom alphabet and collision handling.
      */
-    private function generateUniqueShortCode(int $initialLength = 6, int $maxAttempts = 5): string
+    private function generateUniqueShortCode(int $initialLength = 6, int $maxAttempts = 5)
     {
         // Define a custom alphabet, excluding easily confused characters (l, I, 1, o, O, 0)
         // and making it URL-safe. Base62 without '0', 'O', 'I', 'l' etc.
